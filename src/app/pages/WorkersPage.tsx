@@ -4,8 +4,8 @@ import { Spinner } from "@patternfly/react-core";
 
 import {Worker,Totals} from "../../app/models";
 import {WorkersTable }from "../../app/Components/Tables";
-import useHttp from "../../app/hooks";
-import { properties } from "../../";
+import useHttp from "../../app/hooks/useHttp";
+import { properties } from "../../properties";
 
 export const WorkersPage = () => {
   const [workers, setWorkers] = useState<Worker[]>([]);

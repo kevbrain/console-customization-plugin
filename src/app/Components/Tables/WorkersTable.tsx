@@ -13,7 +13,7 @@ import ExclamationCircleIcon from "@patternfly/react-icons/dist/esm/icons/exclam
 import ExclamationTriangleIcon from "@patternfly/react-icons/dist/esm/icons/exclamation-triangle-icon";
 import CheckCircleIcon from "@patternfly/react-icons/dist/esm/icons/check-circle-icon";
 
-import {Worker,Totals} from "src/app/models";
+import {Worker,Totals} from "../../models";
 
 
 export const WorkersTable: React.FC<{
