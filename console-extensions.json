@@ -18,14 +18,7 @@
       "component": { "$codeRef": "CustomizationList" }
     }
   },
-  {
-    "type": "console.page/route",
-    "properties": {
-      "exact": true,
-      "path": "/workers",
-      "component": { "$codeRef": "Workers" }
-    }
-  },
+ 
   {
     "type": "console.navigation/href",
     "properties": {
