@@ -46,3 +46,4 @@ export const WorkersPage = () => {
   return <React.Fragment>{content}</React.Fragment>;
 };
 
+export default WorkersPage;
