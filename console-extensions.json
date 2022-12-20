@@ -37,16 +37,6 @@
     }
   },
   {
-    "type": "console.navigation/href",
-    "properties": {
-      "id": "workers",
-      "name": "Workers",
-      "href": "/workers",
-      "perspective": "admin",
-      "section": "CapacityTool"
-    }
-  },
-  {
     "type": "console.resource/create",
     "properties": {
       "model": {
