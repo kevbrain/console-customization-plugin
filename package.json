@@ -51,7 +51,7 @@
     "displayName": "OpenShift Console Customization Plugin",
     "description": "Allows you to work with ConsoleLink and other customization resources.",
     "exposedModules": {
-	  "Workers": "./app/pages/WorkersPage",
+	  "Workers": "./components/WorkersPage",
       "CustomizationList": "./components/CustomizationList",
       "CreateConsoleLinkPage": "./components/forms/CreateConsoleLinkPage",
       "CreateConsoleNotificationPage": "./components/forms/CreateConsoleNotificationPage"
