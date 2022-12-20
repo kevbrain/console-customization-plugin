@@ -2,7 +2,7 @@ FROM docker.io/library/node:16 AS build
 
 ADD . /usr/src/app
 WORKDIR /usr/src/app
-RUN yarn install && yarn build
+RUN yarn add @patternfly/react-table && yarn add @patternfly/react-core && yarn install && yarn build
 
 FROM docker.io/library/nginx:stable
 
