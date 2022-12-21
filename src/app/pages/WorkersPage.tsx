@@ -18,9 +18,6 @@ export const WorkersPage = () => {
       const response = await fetch(
         "https://capacity-tool-route-capacity-tool-dev.apps.ocp-lab2.its4u.eu/api/v1/nodes"
       );
-      if (!response.ok) {
-        throw new Error("Something went wrong!");
-      }
       const workersData = await response.json();
       setWorkers(workersData);
       console.log(workersData);
