@@ -227,7 +227,7 @@ const useHttp = () => {
       console.table('in useHttp where data are : ' + data);
       applyData(data);
     } catch (err) {
-      console.error(err);
+      console.log(err);
     }
     setIsLoading(false);
   }, []);
