@@ -29,6 +29,16 @@
   {
     "type": "console.navigation/href",
     "properties": {
+      "id": "workers",
+      "name": "Workers",
+      "href": "/workers",
+      "perspective": "admin",
+      "section": "capacityTool"
+    }
+  },
+  {
+    "type": "console.navigation/href",
+    "properties": {
       "id": "customization",
       "name": "Customization",
       "href": "/customization",
