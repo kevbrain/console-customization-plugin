@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { Spinner } from "@patternfly/react-core";
+
 
 import {Worker,Totals} from "../../app/models";
 import {WorkersTable }from "../../app/Components/Tables";
