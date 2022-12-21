@@ -14,16 +14,14 @@ export const WorkersPage = () => {
   async function fetchWorkersHandler() {
     setIsLoading(true);
     setError(null);
-    try {
+
       const response = await fetch(
         "https://capacity-tool-route-capacity-tool-dev.apps.ocp-lab2.its4u.eu/api/v1/nodes"
       );
       const workersData = await response.json();
       setWorkers(workersData);
       console.log(workersData);
-    } catch (error) {
-      console.log(error);
-    }
+
     setIsLoading(false);
   }
 
