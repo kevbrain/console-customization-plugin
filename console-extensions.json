@@ -27,13 +27,21 @@
     }
   },
   {
+     "type": "console.navigation/section",
+    "properties": {
+       "id": "capacitytool",
+       "perspective": "admin",
+       "name": "Capacity Tool"
+    }
+  },
+  {
     "type": "console.navigation/href",
     "properties": {
       "id": "workers",
       "name": "Workers",
       "href": "/workers",
       "perspective": "admin",
-      "section": "capacityTool"
+      "section": "capacitytool"
     }
   },
   {
