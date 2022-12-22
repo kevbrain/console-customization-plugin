@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 
 import {Worker} from "../../app/models";
-import {WorkersTable }from "../../app/Components/Tables";
+//import {WorkersTable }from "../../app/Components/Tables";
 export const WorkersPage = () => {
   const [workers, setWorkers] = useState<Worker[]>([]);
   async function fetchWorkersHandler() {
@@ -19,9 +19,9 @@ export const WorkersPage = () => {
     
   }, []);
   let content = <React.Fragment />;
-  if (workers.length > 0) {
-    content = <WorkersTable workers={workers} />;
-  }
+  //if (workers.length > 0) {
+  //  content = <WorkersTable workers={workers} />;
+  //}
   return (
     <React.Fragment>
       <h1>WORKERS</h1>
