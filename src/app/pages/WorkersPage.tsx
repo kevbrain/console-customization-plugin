@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import {Worker} from "../../app/models";
 //import {WorkersTable }from "../../app/Components/Tables";
 export const WorkersPage = () => {
-  const [workers, setWorkers] = useState<Worker[]>([]);
+  const [setWorkers] = useState<Worker[]>([]);
   async function fetchWorkersHandler() {
     const response = await fetch('https://capacity-tool-route-capacity-tool-dev.apps.ocp-lab2.its4u.eu/api/v1/nodes');
     console.log('in workerPage after fetch nodes ' + response + ' where response status is ' + response.status);
