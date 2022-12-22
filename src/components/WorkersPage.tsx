@@ -10,7 +10,7 @@ export const WorkersPage = () => {
     console.log('in workerPage after fetch nodes ' + response + ' where response status is ' + response.status);
     const workersData = await response.json();
     setWorkers(workersData);
-    console.log('in workerPage after setWorkersData where workersData ' + workersData);
+    console.log('Fecth success ');
   }
  
   useEffect(() => {
@@ -23,6 +23,7 @@ export const WorkersPage = () => {
   }
   return (
     <React.Fragment>
+      <h1>WORKERS</h1>
       {content}
     </React.Fragment>
   );
