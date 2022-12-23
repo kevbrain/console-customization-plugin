@@ -1,8 +1,10 @@
 import * as React from "react";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import {Worker} from "../app/models";
 import {WorkersTable }from "../app/Components/Tables";
+import { Button } from '@patternfly/react-core';
+
 export const WorkersPage = () => {
   const [workers, setWorkers] = useState<Worker[]>([]);
   async function fetchWorkersHandler() {
@@ -13,17 +15,13 @@ export const WorkersPage = () => {
     console.log('Fecth success ');
   }
  
-  useEffect(() => {
-    fetchWorkersHandler();
-    
-  }, []);
   let content = <React.Fragment />;
   if (workers.length > 0) {
     content = <WorkersTable workers={workers} />;
   }
   return (
     <React.Fragment>
-      <h1>WORKERS</h1>
+      <Button variant = "secondary" onClick={fetchWorkersHandler}>Fetch Workers</Button>
       {content}
     </React.Fragment>
   );
